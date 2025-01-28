@@ -1,0 +1,118 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(29,190,124);
+    background: linear-gradient(135deg, rgba(29,190,124,1) 0%, rgba(9,9,121,1) 39%, rgba(112,3,161,1) 67%, rgba(164,4,32,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 80%;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    scale: 1;
+}
+
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    scale: 1;
+    transition-timing-function: ease-in-out;
+}
+
+input:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+textarea {
+    resize: none;
+}
+.int{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    transform: scale(1);
+}
+
+.checkbox-group input{
+    width: 20px;
+    height: 20px;
+    transform: scale(1);
+    transition-timing-function: ease-in-out;
+}
+
+.checkbox-group input:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.checkbox-group label {
+    margin: 0;
+}
+
+
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+}
